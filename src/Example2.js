@@ -28,7 +28,7 @@ function Title() {
 }
 function Button(props) {
   console.log('button comp');
-  return <button>{props.children}</button>;
+  return <button onClick={props.onClick}>{props.children}</button>;
 }
 function Text(props) {
   console.log('text comp');
