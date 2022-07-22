@@ -1,12 +1,16 @@
 import React from "react";
 import "./style.css";
 import Example1 from './Example1'
+import Example2 from './Example2'
+import Example3 from './Example3'
+import Example4 from './Example4'
 export default function App() {
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
       <Example1/>
+      <Example2/>
+      <Example3/>
+      <Example4/>
     </div>
   );
 }
