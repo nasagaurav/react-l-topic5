@@ -26,9 +26,9 @@ function Title() {
   console.log('title comp');
   return <h1>title</h1>;
 }
-function Button() {
+function Button(props) {
   console.log('button comp');
-  return <button>button</button>;
+  return <button>{props.children}</button>;
 }
 function Text(props) {
   console.log('text comp');
