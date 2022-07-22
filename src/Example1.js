@@ -7,7 +7,7 @@ function Example1() {
     const url = 'https://jsonplaceholder.typicode.com/photos';
     fetch(url)
       .then((d) => d.json())
-      .then((d) => seta(d));
+      .then((d) => seta(d.slice(0,10)));
   };
   useEffect(boot, []);
   return (
