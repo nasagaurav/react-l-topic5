@@ -4,10 +4,10 @@ function Example1() {
   const [a, seta] = useState([]);
 
   const boot = () => {
-    const url = 'https://jsonplaceholder.typicode.com/photos';
+    const url = 'https://jsonplaceholder.typicode.com/users';
     fetch(url)
       .then((d) => d.json())
-      .then((d) => seta(d.slice(0,10)));
+      .then((d) => seta(d.slice(0, 10)));
   };
   useEffect(boot, []);
   return (
